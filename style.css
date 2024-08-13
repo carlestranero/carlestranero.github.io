@@ -28,7 +28,6 @@ header p {
   font-size: 16px;
 }
 
-
 section {
   padding: 20px;
   margin: 20px auto;
@@ -76,4 +75,21 @@ footer {
   ul li {
     margin: 5px 0;
   }
+}
+
+/* Keyframes for the Y-axis spin animation */
+@keyframes spinY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Apply the spin effect on hover over the grid item */
+.grid-item:hover img {
+  animation: spinY 1s; /* Spin the image for 1 second along the Y-axis */
+}
+  transition: transform 0.3s ease-in-out;
 }
