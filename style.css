@@ -87,9 +87,14 @@ footer {
   }
 }
 
+/* Default state of the image */
+.grid-item img {
+  transform: rotateY(0deg); /* Start at 0 degrees */
+  transition: transform 0.7s ease-in-out; /* Smooth transition back to initial state */
+}
+
 /* Apply the spin effect on hover over the grid item */
 .grid-item:hover img {
-  animation: spinY 1s; /* Spin the image for 1 second along the Y-axis */
-}
-  transition: transform 0.3s ease-in-out;
+  transform: rotateY(360deg); /* Rotate to 360 degrees */
+  transition: transform 0.7s ease-in-out; /* Smooth rotation */
 }
