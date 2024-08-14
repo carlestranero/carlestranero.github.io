@@ -55,7 +55,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: fixed; /* Make the footer fixed */
+  position: absolute; /* Make the footer fixed */
   bottom: 0; /* Stick it to the bottom of the viewport */
   width: 100%; /* Full width of the page */
   left: 0; /* Align to the left */
