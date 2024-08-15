@@ -2,7 +2,7 @@ body {
   font-family: neue-haas-grotesk-text, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #F5F5F5;
   color: #333;
 }
 
@@ -51,15 +51,7 @@ page-container {
   min-height: 100vh;
 }
 footer {
-  background-color: #333;
-  color: white;
   text-align: center;
-  padding: 10px 0;
-  position: absolute; 
-  bottom: 0; /* Stick it to the bottom of the viewport */
-  width: 100%; /* Full width of the page */
-  left: 0; /* Align to the left */
-  z-index: 1000; /* Ensure it's on top of other elements */
 }
 
 /* Media Query for Mobile Devices */
@@ -72,8 +64,6 @@ footer {
     padding: 10px;
     margin: 10px auto;
   }
-
-
 }
 
 /* Keyframes for the Y-axis spin animation */
