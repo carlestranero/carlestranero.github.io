@@ -1,7 +1,7 @@
 body {
   font-family: neue-haas-grotesk-text, sans-serif;
   margin: 0;
-  padding: 60px;
+  padding: 0;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -9,6 +9,7 @@ body {
 header {
   background-color: #800020;
   color: white;
+  margin:0;
   padding: 30px;
   text-align: center;
   display: flex;
@@ -29,7 +30,9 @@ header p {
 }
 
 section {
+  flex: 1; /* Take up the remaining space */
   padding: 20px;
+  padding-bottom: 20px;
   margin: 20px auto;
   max-width: 800px;
   background-color: white;
@@ -41,21 +44,18 @@ h2 {
   margin-bottom: 10px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-ul li {
-  margin: 10px 0;
-}
 
+page-container {
+  position: relative;
+  min-height: 100vh;
+}
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: absolute; /* Make the footer fixed */
+  position: absolute; 
   bottom: 0; /* Stick it to the bottom of the viewport */
   width: 100%; /* Full width of the page */
   left: 0; /* Align to the left */
@@ -73,9 +73,7 @@ footer {
     margin: 10px auto;
   }
 
-  ul li {
-    margin: 5px 0;
-  }
+
 }
 
 /* Keyframes for the Y-axis spin animation */
@@ -98,4 +96,20 @@ footer {
 .grid-item:hover img {
   transform: rotateY(360deg); /* Rotate to 360 degrees */
   transition: transform 0.7s ease-in-out; /* Smooth rotation */
+}
+
+/* New code block */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.button-container button {
+  padding: 10px;
+  font-size: 16px;
 }
