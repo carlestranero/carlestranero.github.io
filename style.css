@@ -1,3 +1,4 @@
+/* Set the font family, margin, padding, background color, and text color for the body */
 body {
   font-family: neue-haas-grotesk-text, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Style the header */
 header {
   background-color: #800020;
   color: white;
@@ -16,19 +18,23 @@ header {
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   position: relative; /* For absolute positioning of h1 */
+  
 }
 
+/* Style the h1 element inside the header */
 header h1 {
   position: absolute;
   left: 20px; /* Adjust the left position as needed */
   font-size: 24px;
 }
 
+/* Style the p element inside the header */
 header p {
   margin: 0;
   font-size: 16px;
 }
 
+/* Style the section */
 section {
   flex: 1; /* Take up the remaining space */
   padding: 20px;
@@ -39,21 +45,24 @@ section {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Style the h2 elements */
 h2 {
   color: #800020;
   margin-bottom: 10px;
 }
 
-
-
+/* Define the page-container element */
 page-container {
   position: relative;
   min-height: 100vh;
 }
+
+/* Style the footer */
 footer {
   text-align: center;
 }
 
+/* Style the images inside the footer */
 footer img {
   transition: transform 0.3s ease-in-out;
   width: 30px;
@@ -63,22 +72,24 @@ footer img {
   cursor: pointer;
 }
 
+/* Apply a scale transform on hover for the images inside the footer */
 footer img:hover {
   transform: scale(1.1);
 }
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 600px) {
+  /* Adjust the font size of h1 inside the header for mobile devices */
   header h1 {
     font-size: 2em;
   }
 
+  /* Adjust the padding and margin of the section for mobile devices */
   section {
     padding: 10px;
     margin: 10px auto;
   }
 }
-
 
 /* Keyframes for the Y-axis spin animation */
 @keyframes spinY {
@@ -102,7 +113,7 @@ footer img:hover {
   transition: transform 0.7s ease-in-out; /* Smooth rotation */
 }
 
-
+/* Style the button container */
 .button-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -113,7 +124,9 @@ footer img:hover {
   width: 50%;
 }
 
+/* Style the buttons inside the button container */
 .button-container button {
   padding: 10px;
   font-size: 16px;
 }
+
